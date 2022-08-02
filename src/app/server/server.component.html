@@ -5,7 +5,7 @@
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)" /> -->
 
 <!--Two way data binding-->
-<input type="text" class="form-control" [(ngModel)]="serverName" />
+<!-- <input type="text" class="form-control" [(ngModel)]="serverName" /> -->
 <!-- <p>{{ serverName }}</p>  -->
 <button
   class="btn btn-primary"
@@ -22,7 +22,7 @@
 <!--Assignment-->
 <h3>Assignment</h3>
 <label>User name</label>
-<input type="text" class="form-control" [(ngModel)]="userName" />
+<!-- <input type="text" class="form-control" [(ngModel)]="userName" /> -->
 <p>{{ userName }}</p>
 <button
   class="btn btn-primary"
@@ -32,21 +32,24 @@
   Reset user
 </button>
 
-<p
+<!-- <p
+  <!--
   [ngStyle]="{ backgroundColor: getColor() }"
   [ngClass]="{ online: serverStatus === 'online' }"
+  --
 >
+  >
   {{ "server" }} with ID {{ serverId }} is {{ getServerStatus() }}
-</p>
+</p> -->
 <!-- <app-server *ngFor="let server of servers"></app-server> -->
 <button class="btn btn-primary" (click)="onToggleDetails()">
   Display Details
 </button>
 <p *ngIf="showSecret">ngFor directive assignment</p>
-<div
+<!-- <div
   *ngFor="let logItem of log; let i = index"
   [ngStyle]="{ backgroundColor: logItem >= 5 ? 'blue' : 'transperent ' }"
   [ngClass]="{ 'white-text': logItem >= 5 }"
 >
   {{ logItem }}
-</div>
+</div> -->
